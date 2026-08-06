@@ -1,0 +1,6 @@
+{
+  "name": "사내 주차 할인권 등록 시스템",
+  "description": "임직원 주차 할인권 등록 및 관리자 통계 시스템",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

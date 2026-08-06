@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --amber:  #F2B100;
+  --orange: #E87D18;
+  --red:    #D92B26;
+  --ink:    #15171C;
+  --sub:    #6B7280;
+  --line:   #E3E6EB;
+  --mist:   #F6F7F9;
+  --ok-bg:  #EAF6EE;  --ok-fg: #146C3A;
+  --ng-bg:  #FDECEA;  --ng-fg: #B3261E;
+  --wait-bg:#F6F7F9;  --wait-fg:#4B5563;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, "Malgun Gothic", "맑은 고딕", system-ui, sans-serif;
+  background-color: var(--mist);
+  color: var(--ink);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fillDots {
+  0%, 70%, 100% { background-color: #D6DAE1; }
+  20%           { background-color: var(--amber); }
+  35%           { background-color: var(--orange); }
+  50%           { background-color: var(--red); }
+}
+
+.animate-dots-1 { animation: fillDots 1.2s infinite 0s; }
+.animate-dots-2 { animation: fillDots 1.2s infinite 0.15s; }
+.animate-dots-3 { animation: fillDots 1.2s infinite 0.3s; }
+.animate-dots-4 { animation: fillDots 1.2s infinite 0.45s; }
